@@ -1,38 +1,56 @@
+header{
+    background-color: #020014;
+}
+
 #logo{
     max-width: 200px;
 }
 
 #login{
     width: 100px;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
-    background-color: blue;
-    color: white;
+    background-color: #33FFBE;
+    text-decoration: inherit;
+    font-weight: 600;
+    color: #171830;
 }
 
 #register{
     width: 100px;
-    padding: 15px;
+    padding: 12px;
     border-radius: 5px;
-    background-color: white;
+    background-color: #171830;
+    text-decoration: inherit;
+    font-weight: 600;
     color: gray;
 }
 
 #search{
-    background-color: white;
-    padding: 10px;
+    background-color: #171830;
     border-radius: 5px;
+    padding-left: 10px;
+    margin: 0 30px;
 }
 
 #search input{
     width: 100%;
-    background-color: none;
+    background-color: #171830;
     border: none;
     outline: none;
+    color: white;
 }
 
 #search button{
-    background-color: white;
+    background-color: #71FED2;
     border: none;
     outline: none;
+    width: 50px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+#search button i{
+    color: #08061B;
+    font-size: 18px;
 }
