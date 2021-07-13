@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    background-color: #08061b;
+}
+
+main{
+    height: 100%;
+}
+
+.form-register{
+    margin: 30px 0;
+}
+
+.form-register h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: #C8C2FF;
+}
+
+.form-section-title{
+    font-size: 17px;
+    font-weight: 600;
+    color: #C8C2FF;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-field  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #171830;
+    color: #C8C2FF;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-field .success input {
+    border-color: #2ecc71;
+}
+
+.form-field .error input {
+    border-color: #e74c3c;
+}
+
+.form-field  i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-field .success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-field.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-field small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-field.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-field label{
+margin-bottom: 3px;
+margin-left: 7px;
+font-size: 12px;
+color: #C8C2FF;
+font-weight: 600;
+}
+
+.form-field .input-blank{
+height: 40px;
+border: none;
+outline: none;
+padding: 5px 15px;
+border-radius: 20px;
+border: 2px solid white;
+}
+
+.form-field .input-blank:focus {
+border: 2px solid #cac9db;
+}
+
+.form-field .input-error{
+border: 2px solid 	#F07470;
+}
+
+.form-field .input-success{
+border: 2px solid 	#7879FF;
+}
+
+.form-field small{
+margin-left: 10px;
+color: #F07470 ;
+font-size: 12px;
+visibility: hidden;
+}
+
+#disclamer{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #C8C2FF;
+}
+
+.checkbox{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #C8C2FF;
+}
+
+
+#register-button{
+    border: none;
+    outline: none;
+    background-color: #33FFBE;
+    color: #171830;
+    transition: background-color 0.2s ease;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#register-button:hover{
+    background-color: #71FED2;
+}
