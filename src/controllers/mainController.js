@@ -6,5 +6,11 @@ module.exports = {
             styles: ["header.css","home.css", "footer.css"],
             title: "DigitCircuit"
         })
+    },
+    catalog: (req, res) => {
+        res.render(path.resolve(__dirname, '../views/main/catalog'), {
+            styles: ["header.css","catalog.css", "footer.css"],
+            title: "DigitCircuit"
+        })
     }
 }

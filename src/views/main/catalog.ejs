@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <%- include('../partials/header'); %>
+    <main>
+        <section class="container-lg">
+            <div class="row catalog-container">
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col-sm-12 filter-container">
+                            <div class="d-flex align-items-center filter-head">
+                                <i class="fas fa-filter"></i> <h2>Filtros</h2>                           
+                            </div>
+                            <ul class="nav nav-pills flex-column" id="menu">
+                                <li class="filter-dropdown w-100">
+                                    <a class="filter-title d-flex justify-content-between align-items-center" href="#orderby" data-bs-toggle="collapse">
+                                        <span>Ordenar por</span><i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="collapse show nav flex-column" id="orderby" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <a href="#">Añadidos recientement</a>
+                                        </li>
+                                        <li class="w-100">
+                                            <a href="#">Mayor stock</a>
+                                        </li>
+                                        <li class="w-100">
+                                            <a href="#">Mayor precio </a>
+                                        </li>
+                                        <li class="w-100">
+                                            <a href="#">Menor precio</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="filter-dropdown">
+                                    <a class="filter-title d-flex justify-content-between align-items-center" href="#category" data-bs-toggle="collapse">
+                                        <span>Categoria</span><i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="collapse nav flex-column" id="category" data-bs-parent="#menu">
+                                        <% if(typeof(categories) != 'undefined'){categories.forEach( category => { %>
+                                            <li class="w-100">
+                                                <a href="#"><%= category %></a>
+                                            </li>
+                                        <% })} %>
+                                    </ul>
+                                </li>
+                                <li class="filter-dropdown">
+                                    <a class="filter-title d-flex justify-content-between align-items-center" href="#brand" data-bs-toggle="collapse">
+                                        <span>Marca</span><i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="collapse nav flex-column" id="brand" data-bs-parent="#menu">
+                                        <% if(typeof(brands) != 'undefined'){brands.forEach( brand => { %>
+                                            <li class="w-100">
+                                                <a href="#"><%= brand %></a>
+                                            </li>
+                                        <% })} %>
+                                    </ul>
+                                </li>
+                                <li class="filter-dropdown" id="price-dropdown">
+                                    <a class="filter-title d-flex justify-content-between align-items-center" href="#price" data-bs-toggle="collapse">
+                                        <span>Precio</span><i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="collapse nav flex-column" id="price" data-bs-parent="#menu">
+                                        <li class="w-100">
+                                            <div id="price-filter">
+                                                <form action="/price">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <input type="text" name="min" id="" class="w-50" placeholder="Min">
+                                                    <i class="fas fa-minus"></i>
+                                                    <input type="text" name="max" id="" class="w-50" placeholder="Max">
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <button type="submit" class="w-100"><span>Filtrar</span> <i class="fas fa-filter"></i> </button>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 row">
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="product-box">
+                            <div class="product-image"><img src="/img/products/producto.png" alt=""></div>
+                            <div class="product-description">
+                                <h2>Producto</h2>
+                                <div class="d-flex justify-content-between">
+                                    <small>EN STOCK</small>
+                                    <a href="#">VER MAS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

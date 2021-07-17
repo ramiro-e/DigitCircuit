@@ -1,0 +1,120 @@
+html, body, main {
+    height: 100%;
+}
+
+body{
+    background-color: #08061b;
+}
+
+.catalog-container{
+    margin: 50px 0 100px;
+}
+
+.filter-container{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #020014;
+}
+
+.filter-head{
+    font-size: 25px;
+    color: #C8C2FF;
+}
+
+.filter-dropdown{
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #171830;
+}
+
+.filter-title{
+    text-decoration: none;
+    color: #C8C2FF;
+}
+
+.filter-dropdown a{
+    text-decoration: none;
+    color: #C8C2FF;
+}
+
+.filter-dropdown ul{
+}
+
+#price-dropdown div{
+    
+}
+
+#price-filter div{
+margin-top: 15px;
+}
+
+#price-filter div input{
+    border: none;
+    outline: none;
+    background-color: #171830;
+    color: #C8C2FF;
+    padding: 5px;
+    border: 2px solid #C8C2FF;
+    border-radius: 5px;
+}
+
+#price-filter div button{
+    border: none;
+    outline: none;
+    background-color: #33FFBE;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#price-filter div button span{
+    color: #171830;
+    font-weight: 600;
+}
+
+#price-filter div button i{
+    color: #171830;
+}
+
+#price-dropdown form i{
+    color: #C8C2FF;
+    margin: 0 5px;
+}
+
+.product-box{
+    background-color: #020014;
+    margin: 0 0 50px;
+    border-radius: 5px;
+}
+
+.product-image{
+
+}
+
+.product-image img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px 5px 0 0; 
+}
+
+.product-description{
+    padding: 10px;
+}
+
+.product-description h2{
+    color: #C8C2FF;
+    font-size: 20px;
+}
+
+.product-description small{
+    color: #C8C2FF;
+    font-size: 10px;
+}
+
+.product-description a{
+    text-decoration: none;
+    color: #C8C2FF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4433FF;
+}
